@@ -7,6 +7,10 @@ let firstQuestionDangerousDiv = document.getElementById("firstQuestionDangerousD
 let firstQuestionSubparDiv = document.getElementById("firstQuestionSubparDiv");
 let firstQuestionGoodDiv = document.getElementById("firstQuestionGoodDiv");
 let firstQuestionOversleepingDiv = document.getElementById("firstQuestionOversleepingDiv");
+let thirdQuestionDangerousDiv = document.getElementById("thirdQuestionDangerousDiv");
+let thirdQuestionSubparDiv = document.getElementById("thirdQuestionSubparDiv");
+let thirdQuestionGoodDiv = document.getElementById("thirdQuestionGoodDiv");
+let thirdQuestionOversleepingDiv = document.getElementById("thirdQuestionOversleepingDiv");
 
 
 
@@ -79,15 +83,34 @@ firstButton.addEventListener("click", ()=>{
 
           if(thirdTextbox.value > 9){
             thirdAnswerText.innerHTML = "You are chronically oversleeping.";
+            thirdQuestionDangerousDiv.style.display = "none";
+            thirdQuestionSubparDiv.style.display = "none";
+            thirdQuestionGoodDiv.style.display = "none";
+            thirdQuestionOversleepingDiv.style.display = "unset";
           }
+
           if(thirdTextbox.value <= 4){
             thirdAnswerText.innerHTML = "You are chronically dangerously sleep deprived.";
+            thirdQuestionDangerousDiv.style.display = "unset";
+            thirdQuestionSubparDiv.style.display = "none";
+            thirdQuestionGoodDiv.style.display = "none";
+            thirdQuestionOversleepingDiv.style.display = "none";
           }
+
           if(thirdTextbox.value >= 7 && thirdTextbox.value <= 9){
-            thirdAnswerText.innerHTML = "You are chronically within the healthy range of sleep duration.";
+            thirdAnswerText.innerHTML = "You are consistently within the healthy range of sleep duration.";
+            thirdQuestionDangerousDiv.style.display = "none";
+            thirdQuestionSubparDiv.style.display = "none";
+            thirdQuestionGoodDiv.style.display = "unset";
+            thirdQuestionOversleepingDiv.style.display = "none";
           }
+
           if(thirdTextbox.value < 7 && thirdTextbox.value > 4){
             thirdAnswerText.innerHTML = "You are chronically sleep deprived.";
+            thirdQuestionDangerousDiv.style.display = "none";
+            thirdQuestionSubparDiv.style.display = "unset";
+            thirdQuestionGoodDiv.style.display = "none";
+            thirdQuestionOversleepingDiv.style.display = "none";
           }
 
 
@@ -95,6 +118,7 @@ firstButton.addEventListener("click", ()=>{
 
           thirdDiv.style.display = "none";
           fourthDiv.style.display = "unset";
+
           fourthButton.addEventListener("click", ()=>{
             fourthDiv.style.display = "none";
             fifthDiv.style.display = "unset";
