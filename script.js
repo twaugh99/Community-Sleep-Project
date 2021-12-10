@@ -43,7 +43,7 @@ firstButton.addEventListener("click", ()=>{
     secondDiv.style.display = "unset";
 
     if(firstTextbox.value > 9){
-      firstAnswerText.innerHTML = "You are oversleeping.";
+      firstAnswerText.innerHTML = "You are probably oversleeping.";
       firstQuestionDangerousDiv.style.display = "none";
       firstQuestionSubparDiv.style.display = "none";
       firstQuestionGoodDiv.style.display = "none";
@@ -64,7 +64,7 @@ firstButton.addEventListener("click", ()=>{
       firstQuestionOversleepingDiv.style.display = "none";
     }
     if(firstTextbox.value < 7 && firstTextbox.value > 4){
-      firstAnswerText.innerHTML = "You are sleep deprived.";
+      firstAnswerText.innerHTML = "You are probably sleep deprived.";
       firstQuestionDangerousDiv.style.display = "none";
       firstQuestionSubparDiv.style.display = "unset";
       firstQuestionGoodDiv.style.display = "none";
@@ -82,7 +82,7 @@ firstButton.addEventListener("click", ()=>{
           console.log("changing to information about what constitues sleep deprivation");
 
           if(thirdTextbox.value > 9){
-            thirdAnswerText.innerHTML = "You are chronically oversleeping.";
+            thirdAnswerText.innerHTML = "You are probably chronically oversleeping.";
             thirdQuestionDangerousDiv.style.display = "none";
             thirdQuestionSubparDiv.style.display = "none";
             thirdQuestionGoodDiv.style.display = "none";
@@ -106,7 +106,7 @@ firstButton.addEventListener("click", ()=>{
           }
 
           if(thirdTextbox.value < 7 && thirdTextbox.value > 4){
-            thirdAnswerText.innerHTML = "You are chronically sleep deprived.";
+            thirdAnswerText.innerHTML = "You are probably chronically sleep deprived.";
             thirdQuestionDangerousDiv.style.display = "none";
             thirdQuestionSubparDiv.style.display = "unset";
             thirdQuestionGoodDiv.style.display = "none";

@@ -55,3 +55,8 @@ p{
   margin: auto;
   width: 360px;
 }
+
+
+#firstAnswerText, #thirdAnswerText{
+  text-decoration: underline;
+}
